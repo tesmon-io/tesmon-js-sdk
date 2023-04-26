@@ -65,7 +65,7 @@ class DefaultTesmonEventClient  {
         });
   
         req.on('error', (err) => {
-            console.error(`Failed to send event. Error: ${error.message}`);
+            console.error(`Failed to send event. Error: ${err.message}`);
             reject(err);
         });
 
